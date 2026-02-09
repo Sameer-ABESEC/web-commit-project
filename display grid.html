@@ -3,15 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Internal CSS Practice</title>
+    <style>
+        /* This is the Internal CSS */
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #2ecc71;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .status-badge {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body><div style="display:grid;grid-template-columns: repeat(6,1fr); border: 2px;">
-    <div style="background-color:aqua;">1</div>
-    <div style="background-color:red;">2</div>
-    <div style="background-color:yellow;">3</div>
-    <div style="background-color:green ;">4</div>
-    <div style="background-color:blue;">5</div>
-    <div style="background-color:brown;">6</div>
+<body>
+
+    <div class="card">
+        <h1>Internal CSS Updated!</h1>
+        <p>This change is ready to be committed to Git.</p>
+        <span class="status-badge">Git Push Ready</span>
     </div>
+
 </body>
 </html>
