@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Room Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 8px;
+            width: 100%;
+            background-color: darkblue;
+            color: white;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-<h1 align="center"</h1> 
-    
+    <h1>Hotel Booking</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="checkin">Check-in:</label>
+        <input type="date" id="checkin" name="checkin">
+
+        <label for="checkout">Check-out:</label>
+        <input type="date" id="checkout" name="checkout">
+
+        <label for="room">Room Type:</label>
+        <select id="room" name="room">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+        </select>
+
+        <button type="submit">Book</button>
+    </form>
 </body>
 </html>
